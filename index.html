@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakus F1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bakus F1</h1>
+    <p>Najnovije iz svijeta Formule 1 i podcast rasprave</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#novosti">Novosti</a></li>
+      <li><a href="#podcast">Podcast</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="novosti">
+      <h2>Najnovije vijesti</h2>
+      <article>
+        <h3>Velika nagrada Monaka 2025 – pregled</h3>
+        <p>Utrka u Monaku donijela je neočekivane preokrete, uključujući izvanrednu vožnju vozača iz sredine poretka.</p>
+        <img src="monaco2025.jpg" alt="GP Monako 2025">
+      </article>
+      <article>
+        <h3>Ferrari pokazuje napredak</h3>
+        <p>Nakon dolaska Hamiltona, Ferrari bilježi sve bolje rezultate, a atmosfera u timu je sve pozitivnija.</p>
+        <img src="ferrari2025.jpg" alt="Ferrari 2025">
+      </article>
+      <article>
+        <h3>McLaren dominira u kvalifikacijama</h3>
+        <p>McLaren nastavlja s jakim kvalifikacijama, a mladi vozači sve više oduševljavaju.</p>
+        <img src="mclaren2025.jpg" alt="McLaren 2025">
+      </article>
+
+      <!-- Komentari pomoću Disqusa -->
+      <div id="disqus_thread" style="margin-top:40px;"></div>
+      <script>
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://bakusf1.disqus.com/embed.js';  // zamijeni "bakusf1" sa stvarnim shortname ako registriraš na Disqus
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Molimo omogućite JavaScript za prikaz komentara.</noscript>
+    </section>
+
+    <section id="podcast">
+      <h2>Podcast kanal</h2>
+      <p>Prati nas na YouTubeu za rasprave o utrkama, vozačima i analizama:</p>
+      <a href="https://youtube.com/@bakusf1?si=BMzwsjdv59HeefV0" target="_blank">
+        <img src="youtube-logo.png" alt="YouTube" style="width:150px;">
+      </a>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <form action="https://formsubmit.co/bakusf1@gmail.com" method="POST">
+        <label for="name">Ime:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Poruka:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://tvoje-ime.github.io/bakusf1/hvala.html">
+
+        <button type="submit">Pošalji</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bakus F1. Sva prava pridržana.</p>
+  </footer>
+</body>
+</html>
